@@ -21,5 +21,9 @@
         "email": "salaros@salaros.com",
         "homepage": "http://salaros.com",
         "role": "Contributor"
-    }]
+    }],
+    "suggest": {
+        "johnpbloch/wordpress": "So you can start using menu walker",
+        "twbs/bootstrap": "Bootstrap for your theme which features navbar"
+    }
 }
