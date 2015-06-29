@@ -1,16 +1,27 @@
 <?php
-
 /**
- * Class Name: wp_bootstrap_navwalker
- * GitHub URI: https://github.com/twittem/wp-bootstrap-navwalker
+ * A custom WordPress nav walker class to implement the Bootstrap 3 navigation style
+ *
+ * PHP version 5
+ *
+ * LICENSE: This source file is subject to version 2.0 of GPL license
+ * that is available through the world-wide-web at the following URI:
+ * http://www.gnu.org/licenses/gpl-2.0.txt
+ *
+ * @author     Edward McIntyre <edward@edwardmcintyre.com>
+ * @author     Zhmayev Yaroslav <salaros@salaros.com>
+ *
+ * Class Name: Wp_Bootstrap_Navwalker
+ * GitHub URI: https://github.com/salaros/wp-bootstrap-navwalker
  * Description: A custom WordPress nav walker class to implement the Bootstrap 3 navigation style in a custom theme using the WordPress built in menu manager.
- * Version: 2.0.5
- * Author: Edward McIntyre - @twittem
+ * Version: 2.0.
  * License: GPL-2.0+
  * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
  */
 
-class wp_bootstrap_navwalker extends Walker_Nav_Menu {
+namespace Salaros\Wordpress;
+
+class Wp_Bootstrap_Navwalker extends Walker_Nav_Menu {
 
     /**
      * @see Walker::start_lvl()
@@ -21,7 +32,7 @@ class wp_bootstrap_navwalker extends Walker_Nav_Menu {
      */
     public function start_lvl( &$output, $depth = 0, $args = array() ) {
         $indent = str_repeat( "\t", $depth );
-        $output .= "\n{$indent}<ul role=\"menu\" class=\" dropdown-menu\">\n";
+        $output .= "\n{$indent}<ul role=\"menu\" class=\"dropdown-menu\">\n";
     }
 
     /**
