@@ -66,7 +66,7 @@ class wp_bootstrap_navwalker extends Walker_Nav_Menu {
                 $class_names .= ' dropdown';
             }
 
-            if ( in_array( 'current-menu-item', $classes ) ) {
+            if ( in_array( 'current-menu-item', $classes ) || in_array( 'current-category-ancestor', $classes ) ) {
                 $class_names .= ' active';
             }
 
