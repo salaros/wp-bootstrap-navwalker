@@ -1,0 +1,25 @@
+{
+    "name": "salaros/wp-bootstrap-navwalker",
+    "version": "2.0.4",
+    "license": "GPL-2.0+",
+    "description": "A custom WordPress nav walker class to fully implement the Twitter Bootstrap 3.0+ navigation style in a custom theme using the WordPress built in menu manager.",
+    "homepage": "https://github.com/salaros/wp-bootstrap-navwalker",
+    "type": "library",
+    "keywords": [
+        "Wordpress",
+        "Bootstrap",
+        "menu",
+        "navbar"
+    ],
+    "authors": [{
+        "name": "Edward McIntyre",
+        "email": "edward@edwardmcintyre.com",
+        "homepage": "http://twitter.com/twittem",
+        "role": "Creator"
+    }, {
+        "name": "Zhmayev Yaroslav",
+        "email": "salaros@salaros.com",
+        "homepage": "http://salaros.com",
+        "role": "Contributor"
+    }]
+}
