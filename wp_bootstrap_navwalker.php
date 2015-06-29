@@ -122,39 +122,6 @@ class wp_bootstrap_navwalker extends Walker_Nav_Menu {
     }
 
     /**
-     * Traverse elements to create list from elements.
-     *
-     * Display one element if the element doesn't have any children otherwise,
-     * display the element and its children. Will only traverse up to the max
-     * depth and no ignore elements under that depth.
-     *
-     * This method shouldn't be called directly, use the walk() method instead.
-     *
-     * @see Walker::start_el()
-     * @since 2.5.0
-     *
-     * @param object $element Data object
-     * @param array $children_elements List of elements to continue traversing.
-     * @param int $max_depth Max depth to traverse.
-     * @param int $depth Depth of current element.
-     * @param array $args
-     * @param string $output Passed by reference. Used to append additional content.
-     * @return null Null on failure with no changes to parameters.
-     */
-    public function display_element( $element, &$children_elements, $max_depth, $depth, $args, &$output ) {
-        if ( ! $element )
-            return;
-
-        $id_field = $this->db_fields['id'];
-
-        // Display this element.
-        if ( is_object( $args[0] ) )
-            $args[0]->has_children = ! empty( $children_elements[ $element->$id_field ] );
-
-        parent::display_element( $element, $children_elements, $max_depth, $depth, $args, $output );
-    }
-
-    /**
      * Menu Fallback
      * =============
      * If this function is assigned to the wp_nav_menu's fallback_cb variable
