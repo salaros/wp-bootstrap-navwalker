@@ -21,7 +21,7 @@
 
 namespace Salaros\Wordpress;
 
-class Wp_Bootstrap_Navwalker extends Walker_Nav_Menu {
+class Wp_Bootstrap_Navwalker extends \Walker_Nav_Menu {
 
     /**
      * @see Walker::start_lvl()
